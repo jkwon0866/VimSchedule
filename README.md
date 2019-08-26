@@ -2,7 +2,11 @@
 ## Purpose:
 This is a task manager program that is meant for ease of use and simplicity through the command line. Made with programmers in mind. It will be based on the navigational and editing keys used in Vim.
 
-## Schedule Keys(in progress):
+## How to Use:
+### Setting up:
+1. Run `git clone https://github.com/jkwon0866/VimSchedule.git`, then enter the created directory.
+2. To use the schedule, run `g++ main.cpp TaskList.cpp -o schedule` and enter `./schedule`. For test case assertions, run `g++ test.cpp TaskList.cpp -o output" then enter `./test`
+### Schedule Keys(in progress):
 j, k - navigate your tasks down or up, respectively
 shift+j, shift+k - move the task currently selected down or up, respectively
 i - allows editing on the event the arrow is pointed
