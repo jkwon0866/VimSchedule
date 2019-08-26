@@ -1,6 +1,7 @@
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
-#include "TaskList.h"
+#include "../classes/TaskList.h"
+#include "../classes/Task.h"
 
 /*
 A bottom-up approach: test the lowest level of classes, starting with the functions that will
