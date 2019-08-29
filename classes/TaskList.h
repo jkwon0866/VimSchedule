@@ -27,10 +27,8 @@ public:
 	void moveUp();
 	void moveDown();
 	*/
-	/*
+	
 	void save();
-	void quit();
-	*/
 };
 
 #endif

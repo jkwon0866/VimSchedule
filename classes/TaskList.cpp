@@ -9,16 +9,15 @@
 
 
 
-//Go through the file.txt and add a new Task for each statement beginning with the "***" characters 
+//Go through the tasks.txt and add a new Task for each statement beginning with the "***" characters 
 TaskList::TaskList(){
 	this->head = NULL;
 	this->arrow = NULL;
 	Task* prev = NULL;
 	Task* point = NULL;
 	//read the file text
-	ifstream is;
+	ifstream is("tasks.txt");
 	string word;
-	is.open("file.txt");
 	while(is >> word){
 		if(word == "***"){
 			//point is the Task that will become new; prev retains what point was before
@@ -61,7 +60,7 @@ TaskList::~TaskList(){
 }
 
 void TaskList::printList(){
-	cout << "------------------------------------------------------------" << endl;
+	cout << "----------------------------------------------------------------------" << endl;
 	Task* curr = this->head;	
 	while(curr != NULL){
 		if(this->arrow->getTask() == curr->getTask()){
@@ -70,7 +69,7 @@ void TaskList::printList(){
 		cout << curr->getTask() << endl;
 		curr = curr->getNext();
 	}
-	cout << "------------------------------------------------------------" << endl;
+	cout << "----------------------------------------------------------------------" << endl;
 }
 
 //-----------------------------Editing Controls----------------------------//
@@ -162,4 +161,15 @@ void TaskList::goDown(){
 	if(this->arrow->getNext() != NULL){
 		this->arrow = this->arrow->getNext();
 	}
+}
+
+
+void TaskList::save(){
+	ofstream os("tasks.txt", ios::trunc);	
+	Task *curr = this->head;
+	while(curr != NULL){
+		os << " *** " << curr->getTask();
+		curr = curr->getNext();
+	}	
+	os.close();
 }

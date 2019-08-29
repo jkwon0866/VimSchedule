@@ -1,4 +1,0 @@
-*** This is the file that I'm reading. *** And this should be in the next line. *** Hey look, it's another line.
-*** This is going to be fun. *** There once was an ugly barnacle.
-*** He was so ugly that everyone died.
-*** The end.

@@ -1,0 +1,1 @@
+ *** Hello and welcome to your schedule! *** Each line represents a task *** For help with using this program, enter "help" *** Otherwise, feel free to delete these lines and start scheduling!
