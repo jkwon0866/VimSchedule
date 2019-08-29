@@ -7,6 +7,7 @@ How to Use:
 ### Setting up:
 1. Run `git clone https://github.com/jkwon0866/VimSchedule.git`, then go into the created directory.
 2. To use the schedule, run `g++ main.cpp classes/TaskList.cpp classes/Task.cpp -o schedule` and enter `./schedule`. For test case assertions, go into the tests directory, run `g++ test.cpp ../classes/TaskList.cpp ../classes/Task.cpp -o test` then enter `./test`
+**IMPORTANT**: The executable must be used in the top directory, otherwise errors will occur.  
 ### Schedule Keys(in progress):
 j, k - navigate your tasks down or up, respectively   
 shift+j, shift+k - move the task currently selected down or up, respectively   

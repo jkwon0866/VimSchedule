@@ -9,9 +9,15 @@ private:
 	Task* head;
 	Task* arrow;
 public:
+	//Constructor and Destructor
 	TaskList();
-	void setArrow(Task* point);
+	~TaskList();
+
 	void printList();
+	//Editing
+	void remove();
+	void append();
+	void prepend();
 
 	//Navigation controls
 	void goUp();
@@ -22,7 +28,6 @@ public:
 	void moveDown();
 	*/
 	/*
-	~TaskList();
 	void save();
 	void quit();
 	*/
