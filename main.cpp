@@ -1,7 +1,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
-#include "classes/TaskList.h"
+#include "classes/Controller.h"
 
 using namespace std;
 
@@ -18,27 +18,29 @@ void help(){
 }
 
 int main(){
-	TaskList list;
-	list.printList();
+	//Keep this commented until Controller constructor is implemented
+	/*
+	Controller controls;
+	controls.printList();
 	string command;
 	while (cin >> command){
 		if(command == "j"){
-			list.goDown();
+			controls.goDown();
 		}
 		else if(command == "k"){
-			list.goUp();
+			controls.goUp();
 		}
 		else if(command == "a"){
-			list.append();
+			controls.append();
 		}
 		else if(command == "p"){
-			list.prepend();
+			controls.prepend();
 		}
 		else if(command == "x"){
-			list.remove();
+			controls.remove();
 		}
 		else if(command == "w"){
-			list.save();
+			controls.save();
 		}
 		else if(command == "help"){
 			help();
@@ -48,13 +50,14 @@ int main(){
 			exit(0);	
 		}
 		else if(command == "wq"){
-			list.save();
+			controls.save();
 			exit(0);
 		}
 		else{
 			cout << "For keys to use in schedule, enter \"help\"" << endl;
 		}
-		list.printList();
+		controls.printList();
 	}
+	*/
 	return 0;
 }
