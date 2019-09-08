@@ -2,17 +2,17 @@
 #define COMMAND_H
 
 #include <vector>
-#include "Task.h"
+#include "../Task.h"
 
 
 class Command{
-private:
-	int position;
 protected:
+	int position;
 	vector<Task> *schedule;
 public:
-	virtual int execute();
-	virtual int unexecute();
+	Command(vector<Task> *sched, int pos) : schedule(sched), position(pos) {};
+	virtual void execute() = 0;
+	virtual void unexecute() = 0;
 };
 
 #endif

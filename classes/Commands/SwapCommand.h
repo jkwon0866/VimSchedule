@@ -5,8 +5,7 @@
 
 class SwapCommand: public Command{
 public:
-	SwapCommand(vector<Task> *);
-	int execute();
-	int unexecute();
+	void execute();
+	void unexecute();
 };
 #endif

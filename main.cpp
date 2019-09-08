@@ -19,20 +19,22 @@ void help(){
 
 int main(){
 	//Keep this commented until Controller constructor is implemented
-	/*
 	Controller controls;
 	controls.printList();
 	string command;
 	while (cin >> command){
+		/*
 		if(command == "j"){
 			controls.goDown();
 		}
 		else if(command == "k"){
 			controls.goUp();
 		}
-		else if(command == "a"){
+		*/
+		if(command == "a"){
 			controls.append();
 		}
+		/*
 		else if(command == "p"){
 			controls.prepend();
 		}
@@ -42,6 +44,7 @@ int main(){
 		else if(command == "w"){
 			controls.save();
 		}
+		*/
 		else if(command == "help"){
 			help();
 			continue;
@@ -49,15 +52,16 @@ int main(){
 		else if(command == "q"){
 			exit(0);	
 		}
+		/*
 		else if(command == "wq"){
 			controls.save();
 			exit(0);
 		}
+		*/
 		else{
 			cout << "For keys to use in schedule, enter \"help\"" << endl;
 		}
 		controls.printList();
 	}
-	*/
 	return 0;
 }

@@ -5,8 +5,7 @@
 
 class PrependCommand: public Command{
 public:
-	PrependCommand(vector<Task> *);
-	int execute();
-	int unexecute();
+	void execute();
+	void unexecute();
 };
 #endif

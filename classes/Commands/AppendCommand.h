@@ -5,8 +5,8 @@
 
 class AppendCommand: public Command{
 public:
-	AppendCommand(vector<Task> *);
-	int execute();
-	int unexecute();
+	AppendCommand(vector<Task> *sched, int pos) : Command(sched,pos) {};
+	void execute();
+	void unexecute();
 };
 #endif

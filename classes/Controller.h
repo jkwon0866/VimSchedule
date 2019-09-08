@@ -8,25 +8,25 @@
 using namespace std;
 
 //List of Tasks
-//Abstract out the list data structure(with STL list)
+//Abstract out the list data structure(with vector)
 
 class Controller{
 private:
 	int position;
-	vector<Task> taskList;
-	friend stack<Command *> undoHistory;
-	friend stack<Command *> redoHistory; 
+	vector<Task> schedule;
+	stack<Command *> undoHistory;
+	stack<Command *> redoHistory; 
 public:
-	Controller(vector<Task>);
+	Controller();
+	void printList();
 	void append();
-	void prepend();
-	void moveUp();
-	void moveDown();
+	//void prepend();
+	//void moveUp();
+	//void moveDown();
 	//void undo();
 	//void redo();
 };
 
-//printList()
 //remove()
 //goUp()
 //goDown()

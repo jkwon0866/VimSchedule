@@ -5,8 +5,7 @@
 
 class RemoveCommand: public Command{
 public:
-	RemoveCommand(vector<Task> *);
-	int execute();
-	int unexecute();
+	void execute();
+	void unexecute();
 };
 #endif
